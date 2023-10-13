@@ -5,8 +5,8 @@ classdef Environment < handle
         % static configuration settings
         NumRobots;              % number of robots in field
         AnchorsPerRobot;        % number of visual anchors for tracking per robot
-        XAxisSize;              % width of field in pixels (determined by overhead webcam)
-        YAxisSize;              % height of field in pixels (determined by overhead webcam)
+        XAxisSize=1280;              % width of field in pixels (determined by overhead webcam)
+        YAxisSize=960;              % height of field in pixels (determined by overhead webcam)
         UDPTransmission;        % boolean indicating whether UDP transmissions will be sent
         UDPReception;           % boolean indicating whether UDP messages will be listened for
         ConvergenceThreshold;   % distance (px) to check against when determining if a robot has converged upon its target point

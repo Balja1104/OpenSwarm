@@ -41,7 +41,7 @@ classdef Vision < handle
             
             % configure camera
             imaqreset;
-            obj.Camera = videoinput('winvideo', 1);
+            obj.Camera = videoinput('winvideo', 2);
             triggerconfig(obj.Camera, 'manual');
             start(obj.Camera);
             

@@ -1,6 +1,6 @@
 % initialize camera
 imaqreset;
-camera = videoinput('winvideo', 1);
+camera = videoinput('winvideo', 2);
 triggerconfig(camera, 'manual');
 start(camera);
 

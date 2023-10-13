@@ -3,7 +3,7 @@
  * Michigan State University D-CYPHER Lab
  * Configuration.h
  * 9.1.19
- * 
+ *
  * Provides configuration settings for the client robot.
  */
 
@@ -19,8 +19,8 @@ public:
     int ID = 3; // unique identifier for this robot
 
     // network configuration
-    char SSID[11] = "belkin.785";                // network SSID
-    char Password[9] = "cyb2e9ce";               // network password
+    char SSID[11] = "LG Stylo 3_4859";           // network SSID
+    char Password[9] = "baraa425";               // network password
     int RXPort = 8080;                           // network port to listen for UDP broadcast commands
     IPAddress TXIP = IPAddress(10, 10, 10, 255); // broadcast ip to send UDP info over
     int TXPort = 8000 + ID;                      // network port to send data back to Matlab server; systematically encodes ID in port
